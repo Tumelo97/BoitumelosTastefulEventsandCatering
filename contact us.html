@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Boitumelo’s Tasteful Events and Catering |Home</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+                 <a href="index.html">Home</a>
+                 <a href="about.html">About</a>
+                 <a href="services.html">Services</a>
+                 <a href="gallery.html">Gallery</a>
+                 <a href="contact us.html">contact</a>
+
+
+                 <!-- Contact Page Content -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to plan your event? Fill out the form below or reach out directly!</p>
+            <h3>Contact Details</h3>
+            <p>Email: info@tastefuleventscatering.co.za</p>
+            <p>Phone: +27 21 123 4567</p>
+            <p>Address: 123 Foodie Lane, Cape Town, South Africa</p>
+            <h3>Inquiry Form</h3>
+            <form action="submit-inquiry.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="event-type">Event Type:</label><br>
+                <select id="event-type" name="event-type" required>
+                    <option value="">Select an event</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="private">Private Party</option>
+                </select><br>
+                <label for="date">Event Date:</label><br>
+                <input type="date" id="date" name="date" required><br>
+                <label for="guests">Number of Guests:</label><br>
+                <input type="number" id="guests" name="guests" min="10" required><br>
+                <label for="message">Additional Details:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                <br>
+                <input type="submit" value="Submit Inquiry">
+            </form>
+            <h3>Follow Us</h3>
+            <p>
+                <a href="https://www.facebook.com/tastefuleventscatering">Facebook</a> |
+                <a href="https://www.instagram.com/tastefuleventscatering">Instagram</a> |
+                <a href="https://www.twitter.com/tastefulevents">Twitter</a>
+            </p>
+        </section>
+    </main>
+
+     <footer>
+        <p>&copy; 2025 Tasteful Events Catering. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+   </body>
+</html>
