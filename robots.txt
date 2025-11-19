@@ -1,0 +1,47 @@
+# robots.txt for Boitumelo's Tasteful Events Catering
+# This file tells search engine crawlers which pages to crawl and index
+
+# Allow all search engines to access all content
+User-agent: *
+Allow: /
+
+# Disallow access to specific directories (if any)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/
+
+# Disallow access to specific file types
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+# Allow access to CSS and JavaScript files for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://www.tastefuleventscatering.co.za/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+# Crawl-delay: 10
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

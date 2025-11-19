@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a quote or make an enquiry for catering services with Boitumelo's Tasteful Events">
+    <title>Enquiry | Boitumelo's Tasteful Events Catering</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BOITUMELO'S</h1>
+                <p class="tagline">Tasteful Events Catering</p>
+            </div>
+            
+            <!-- Main Navigation Menu -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-overlay">
+            <h2>Request a Quote</h2>
+            <p>Let's start planning your perfect event together</p>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Enquiry Introduction -->
+        <section class="enquiry-intro">
+            <div class="container">
+                <h2>Tell Us About Your Event</h2>
+                <p>Complete the form below and our team will get back to you within 24 hours with a personalized quote and recommendations. We look forward to helping you create an unforgettable experience for your guests.</p>
+            </div>
+        </section>
+
+        <!-- Enquiry Form Section -->
+        <section class="enquiry-form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <!-- Form begins here -->
+                    <div class="enquiry-form">
+                        <h3>Event Details Form</h3>
+                        
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h4>Personal Information</h4>
+                            
+                            <div class="form-group">
+                                <label for="fullname">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="+27 XX XXX XXXX">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event Information -->
+                        <div class="form-section">
+                            <h4>Event Information</h4>
+                            
+                            <div class="form-group">
+                                <label for="event-type">Event Type <span class="required">*</span></label>
+                                <select id="event-type" name="event-type" required>
+                                    <option value="">Select event type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="graduation">Graduation</option>
+                                    <option value="other">Other Private Event</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="event-date">Event Date <span class="required">*</span></label>
+                                    <input type="date" id="event-date" name="event-date" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="event-time">Preferred Time</label>
+                                    <input type="time" id="event-time" name="event-time">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="venue">Venue/Location <span class="required">*</span></label>
+                                <input type="text" id="venue" name="venue" required placeholder="Where will your event take place?">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="guest-count">Number of Guests <span class="required">*</span></label>
+                                    <input type="number" id="guest-count" name="guest-count" required min="10" placeholder="e.g., 50">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="budget">Estimated Budget</label>
+                                    <select id="budget" name="budget">
+                                        <option value="">Select budget range</option>
+                                        <option value="under-50k">Under R50,000</option>
+                                        <option value="50k-100k">R50,000 - R100,000</option>
+                                        <option value="100k-200k">R100,000 - R200,000</option>
+                                        <option value="200k-plus">R200,000+</option>
+                                        <option value="flexible">Flexible</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Preferences -->
+                        <div class="form-section">
+                            <h4>Service Preferences</h4>
+                            
+                            <div class="form-group">
+                                <label for="service-style">Preferred Service Style</label>
+                                <select id="service-style" name="service-style">
+                                    <option value="">Select service style</option>
+                                    <option value="buffet">Buffet Style</option>
+                                    <option value="plated">Plated Service</option>
+                                    <option value="family-style">Family Style</option>
+                                    <option value="cocktail">Cocktail Reception</option>
+                                    <option value="not-sure">Not Sure / Need Advice</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Additional Services Needed</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="bar-service">
+                                        Bar & Beverage Service
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="equipment">
+                                        Equipment Rental (tables, chairs, linens)
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="staff">
+                                        Additional Staff (servers, bartenders)
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="setup">
+                                        Full Setup & Cleanup
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="services" value="coordination">
+                                        Event Coordination
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dietary">Dietary Requirements / Restrictions</label>
+                                <textarea id="dietary" name="dietary" rows="3" placeholder="Please list any dietary requirements (vegetarian, vegan, halal, allergies, etc.)"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Additional Information -->
+                        <div class="form-section">
+                            <h4>Additional Information</h4>
+                            
+                            <div class="form-group">
+                                <label for="message">Tell Us More About Your Event</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Share your vision, special requests, or any questions you have..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="how-heard">How Did You Hear About Us?</label>
+                                <select id="how-heard" name="how-heard">
+                                    <option value="">Please select</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="social-media">Social Media</option>
+                                    <option value="referral">Referral from Friend/Family</option>
+                                    <option value="event-planner">Event Planner</option>
+                                    <option value="previous-client">Previous Client</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Submit -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terms" required>
+                                    I agree to be contacted regarding my enquiry and understand that my information will be handled according to the privacy policy <span class="required">*</span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    Subscribe to our newsletter for catering tips and special offers
+                                </label>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+                                <button type="reset" class="btn btn-secondary">Clear Form</button>
+                            </div>
+                        </div>
+
+                        <p class="form-note"><span class="required">*</span> Required fields</p>
+                    </div>
+
+                    <!-- Contact Information Sidebar -->
+                    <div class="enquiry-sidebar">
+                        <div class="sidebar-card">
+                            <h3>Need Help?</h3>
+                            <p>Our team is here to answer your questions and help you plan the perfect event.</p>
+                            
+                            <div class="contact-item">
+                                <strong>Phone:</strong>
+                                <p>+27 21 123 4567</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <strong>Email:</strong>
+                                <p>info@tastefuleventscatering.co.za</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <strong>Hours:</strong>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 4:00 PM<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3>What Happens Next?</h3>
+                            <ol class="process-list">
+                                <li>We review your enquiry within 24 hours</li>
+                                <li>Our team contacts you to discuss details</li>
+                                <li>We provide a customized quote</li>
+                                <li>Schedule a tasting session (if desired)</li>
+                                <li>Finalize your menu and arrangements</li>
+                            </ol>
+                        </div>
+
+                        <div class="sidebar-card highlight">
+                            <h3>Book Early!</h3>
+                            <p>Our most popular dates fill up quickly, especially for weddings. We recommend booking 3-6 months in advance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="enquiry-faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>How far in advance should I book?</h4>
+                        <p>We recommend booking 3-6 months in advance for weddings and 4-8 weeks for other events. However, we can often accommodate shorter notice for smaller gatherings.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you offer tasting sessions?</h4>
+                        <p>Yes! We offer complimentary tasting sessions for events with 75+ guests. For smaller events, tasting sessions are available at a nominal fee.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Can you accommodate dietary restrictions?</h4>
+                        <p>Absolutely! We can create menus for vegetarian, vegan, halal, kosher, gluten-free, and other dietary requirements.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What areas do you serve?</h4>
+                        <p>We primarily serve Cape Town and surrounding areas including Stellenbosch, Paarl, and the Western Cape. Contact us for events outside these areas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Boitumelo's Tasteful Events</h3>
+                    <p>Cape Town's premier catering service specializing in weddings, corporate events, and private parties since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@tastefuleventscatering.co.za</p>
+                    <p>Phone: +27 21 123 4567</p>
+                    <p>Cape Town, South Africa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Boitumelo's Tasteful Events Catering. All rights reserved.</p>
+                <p>Website by: Tumelo Kola (ST10470592)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript file link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
